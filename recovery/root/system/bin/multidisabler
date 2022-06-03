@@ -24,8 +24,8 @@ resize_vendor() {
   local dm_block_ext4=$(df -t ext4 | grep "/vendor" | cut -DF1)
   local dm_block_f2fs=$(df -t f2fs | grep "/vendor" | cut -DF1)
 
-  echo " - Unmounting /vendor..."
   if [ "$dm_block_ext4" ]; then
+    echo " - Unmounting /vendor..."
     umount /vendor
     echo " - Checking vendor block partition before resizing..."
     e2fsck -f $dm_block_ext4
