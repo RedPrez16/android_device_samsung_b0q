@@ -24,8 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Inherit all the Samsung stuff.
 $(call inherit-product, vendor/samsung/b0q)
