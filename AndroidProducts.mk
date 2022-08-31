@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/twrp_b0q.mk
+	$(LOCAL_DIR)/statix_b0q.mk
 
-COMMON_LUNCH_CHOICES := twrp_b0q-eng
+COMMON_LUNCH_CHOICES := statix_b0q-userdebug

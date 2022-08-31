@@ -27,6 +27,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+# Inherit all the Samsung stuff.
+$(call inherit-product, vendor/samsung/b0q)
+
 # Inherit device configuration
 $(call inherit-product, device/samsung/b0q/device.mk)
 
@@ -37,7 +40,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/b0q/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_b0q
+PRODUCT_NAME := statix_b0q
 PRODUCT_DEVICE := b0q
 PRODUCT_MODEL := SM-S908E
 PRODUCT_BRAND := samsung
